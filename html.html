@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="css.css"/>
+    <title>Grade Calculator</title>
+
+</head>
+
+
+<h1>Grade Calculator</h1>
+<h2>By Norman Tu</h2>
+<table id="table" border="”1”" cellspacing="”2”" cellpadding="”5”">
+    <tr>
+        <td></td>
+        <td>% Grade Weight</td>
+        <td>% Grade </td>
+    </tr><tr>
+    <td>Homework</td>
+    <td><input id="weight1" onchange="clearCurrentGrade()" value="10"></td>
+    <td><input id="grade1" onchange="clearCurrentGrade()" value="100"></td>
+</tr><tr>
+    <td>Participation</td>
+    <td><input id="weight2" onchange="clearCurrentGrade()" value="15"></td>
+    <td><input id="grade2" onchange="clearCurrentGrade()" value="100"></td>
+</tr><tr>
+    <td>Tests</td>
+    <td><input id="weight3" onchange="clearCurrentGrade()" value="35"></td>
+    <td><input id="grade3" onchange="clearCurrentGrade()" value="100"></td>
+</tr><tr>
+    <td>Quizzes</td>
+    <td><input id="weight4" onchange="clearCurrentGrade()" value="10"></td>
+    <td><input id="grade4" onchange="clearCurrentGrade()" value="100"></td>
+</tr><tr>
+    <td>Projects</td>
+    <td><input id = "weight5" onchange="clearCurrentGrade()" value="30"</td>
+    <td><input id="grade5" onchange="clearCurrentGrade()"value="100"</td>
+    <td><button id="calcGrade" onclick="calcGrade()">Calculate Current Grade</button></td>
+    <td><div id="currentGrade"></div></td>
+</tr>
+</table>
+
+<br><br><br><br>
+
+<table id="table1" border="”1”" cellspacing="”2”" cellpadding="”5”">
+    <tr>
+        <td>Final Exam % Weight</td><td><input id="finalWeight" onchange="clearGradeNeeded()" value="15"></td>
+    </tr>
+    <tr>
+        <td>Desired % Grade</td><td><input id="desiredGrade" onchange="clearGradeNeeded()" value="90"></td>
+    </tr>
+    <tr>
+        <td><button id="calcGradeNeeded" onclick="calcGradeNeeded()">Calculate Final Exam Grade Needed</button></td><td><div id="gradeNeeded"></div></td>
+    </tr>
+</table>
+
+</body>
+</html>
